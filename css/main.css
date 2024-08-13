@@ -24,6 +24,7 @@ a {
     font-size: 16px;
   }
   body{
+    height: 2000px;
     font-family: Pretendard, "Nanum Myeongjo", -apple-system, BlinkMacSystemFont,
     system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
     "Noto Sans KR", "Malgun Gothic", sans-serif;

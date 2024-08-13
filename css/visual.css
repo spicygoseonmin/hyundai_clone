@@ -1,0 +1,73 @@
+@charset "utf-8";
+.visual {
+  position: relative;
+  height: 100vh;
+}
+.swVisual {
+    position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swVisual .swiper-slide {
+  overflow: hidden;
+}
+/* 비디오를 영역에 가득 채운다 */
+.swVisual video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.visual .inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7%;
+  z-index: 99;
+}
+.visual-control {
+    position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+ 
+ 
+}
+.visual-control li {
+   position: relative; 
+   width: calc(100% / 8);
+   
+   text-align: center;
+   padding: 20px 0;
+   cursor: pointer;
+}
+.visual-control li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255,255,255,0.4);
+}
+.visual-control li>.bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 1);
+    /* 비디오 시간을 100 등분으로 처리 */
+    transition: width;
+}
+.visual-control li span{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;  
+}
