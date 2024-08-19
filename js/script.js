@@ -63,5 +63,6 @@ window.addEventListener("load", function () {
       logoG.style.display = "none";
     });
     
+    
   });
   
