@@ -43,11 +43,97 @@
   background: url("../images/business06.png") no-repeat center;
   background-size: cover;
 }
-.business .inner{
-    height: 100%;
+.business .inner {
+  height: 100%;
 }
-.business-txt{
-    position: relative;
-    height: 100%;
-    color: white;
+.business-txt {
+  position: relative;
+  height: 100%;
+  color: #fff;
+}
+.business-txt h3{
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.swBusiness .swiper-slide-active .business-txt h3{
+  /* transition: opacity 1s , transform 1s ; */
+  transition: all 1s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.business-txt p{
+  margin-top: 55px;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: -0.24px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.swBusiness .swiper-slide-active .business-txt p{
+  /* transition: opacity 1s , transform 1s ; */
+  transition: all 0.5s 1s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.business-txt p span{
+  margin-top: 18px;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.18px;
+  color: #e0e0e0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swBusiness .swiper-slide-active .business-txt p span {
+  transition: all 1s 0.6s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.business-txt a{
+  margin-top: 71px;
+  display: inline-block;
+  position: relative;
+  padding-right: 46px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.14px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.business-txt a::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -8px;
+  width: 36px;
+  height: 25px;
+  background: url("../images/more.png") no-repeat center;
+}
+.swBusiness .swiper-slide-active .business-txt a {
+  transition: all 1s 0.8s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.business-txt em{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 1.43;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.14px;
+  color: #a1a1a1;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swBusiness .swiper-slide-active .business-txt em{
+  transition: all 1s 1s;
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -2,7 +2,7 @@
 .news {
   position: relative;
   padding: 85px 0;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 .news .inner {
   display: flex;
