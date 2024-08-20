@@ -86,14 +86,14 @@
 .header .inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center ;
   height: 100%;
 }
 .header-right {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+  align-items: center ;
+  gap:0 50px;
 }
 .language-box {
   padding-top: 25px;
@@ -126,7 +126,8 @@
   transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s;
+  /* js로 기능 추가 */
+  /* transition: all 0.2s; */ 
 }
 .language-box-active .language li{
   transform: translateY(0px);
